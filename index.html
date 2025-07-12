@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Todo List</h1>
+            <button class="theme-toggle" id="theme-toggle">🌙</button>
+        </header>
+        
+        <div class="input-group">
+            <input type="text" id="todo-input" placeholder="Add a new task...">
+            <button id="add-btn">Add</button>
+        </div>
+        
+        <div class="filters">
+            <button class="filter-btn active" id="all">All</button>
+            <button class="filter-btn" id="active">Active</button>
+            <button class="filter-btn" id="completed">Completed</button>
+        </div>
+        
+        <div id="todo-list"></div>
+    </div>
+
+    <template id="todo-item-template">
+       <div class="todo-item">
+        <input type="checkbox" class="todo-checkbox"/>
+        <div class="todo-text"></div>
+        <button class="delete-btn"></button>
+       </div>
+    </template>
+    
+    <script src="app.js" type="module"></script>
+</body>
+</html>
